@@ -1,5 +1,5 @@
 import React from 'react'
 
-export default function() {
-    return <h1>Primeiro componente react</h1>
-}
+export default () => (
+    <h1>Primeiro componente react arrow function</h1>
+)
