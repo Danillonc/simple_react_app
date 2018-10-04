@@ -17,6 +17,7 @@ export default class Todo extends Component {
     }
 
     handleAdd() {
+        console.log("clicou")
        console.log(this.state.description)
     }
 
@@ -24,7 +25,9 @@ export default class Todo extends Component {
         return (
             <div>
                 <PageHeader name="Tarefas" small="Cadastro"></PageHeader>
-                <TodoForm description={this.state.description} handleChage={this.handleChange} handleAdd={this.handleAdd} />
+                <TodoForm description={this.state.description} 
+                          handleChange={this.handleChange}
+                          handleAdd={this.handleAdd} />
                 <TodoList />
             </div>
         )
